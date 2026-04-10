@@ -62,7 +62,8 @@ class Game {
         // else and empty array is returned
 
         std::vector<Piece> checkPawn(const Piece & x, bool moveList);
-        std::vector<Piece> checkRook(const Piece & x, bool moveList);
+        std::vector<Piece> rookMoveList(const Piece & x);
+        void rookDefends(const Piece & x);
         std::vector<Piece> checkBishop(const Piece & x, bool moveList);
         std::vector<Piece> checkQueen(const Piece & x, bool moveList);
         std::vector<Piece> checkKing(const Piece & x, bool moveList);
